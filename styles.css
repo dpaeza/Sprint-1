@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', Arial;
+}
+
+.centro{
+    width: 303px;
+}
+
+header{
+    height: 71px;
+    background-color: hsl(10, 79%, 65%);
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.radius{
+    border-radius: 8px;
+}
+
+.mybalance{
+    color: hsl(33, 100%, 98%);
+}
+
+h4{
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+img{
+    height: 29px;
+    width: 42px;
+}
+
+main{
+    height: 287px;
+    background-color: hsl(33, 100%, 98%);
+    padding: 19px 24px 31px;
+}
+
+h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.colorbrown{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+.colorgrey{
+    color: hsl(28, 10%, 53%);
+}
+
+.barras{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid hsl(27, 66%, 92%);
+    margin-top: 36px;
+    height: 120px;
+    
+}
+
+.barra{
+    width: 30px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.barra:hover{
+ background-color: #FF9B87;
+}
+
+.uno{
+    height: 28px;
+}
+
+.dos {
+    height: 55px;
+}
+
+.tres {
+    height: 85px;
+    width: 30px;
+    background-color: hsl(186, 34%, 60%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tres:hover {
+    background-color: #B4DFE5;
+}
+
+.cuatro {
+    height: 50px;
+}
+
+.cinco {
+    height: 38px;
+}
+
+.seis {
+    height: 70px;
+}
+
+.siete {
+    height: 40px;
+}
+
+.weekdays{
+    font-size: 9px;
+    text-align: center;
+    margin: 4px 0px 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.abajo{
+    padding: 17px 0px 30px;
+}
+
+.parteinferior{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.letraabajo{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.abajoderecha{
+    text-align: right;
+}
+
+.pesos{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.tooltip{
+    position: relative;
+}
+
+.tooltipText, .tooltipText2, .tooltipText3, .tooltipText4, .tooltipText5, .tooltipText6, .tooltipText7{
+    position: absolute;
+    bottom: 50%;
+    top:0;
+    left: 15px;
+    transform: transLatex(-50%);
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    height: 24px;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+    visibility: hidden;
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease; */
+}
+
+.tooltipText, .tooltipText2 , .tooltipText3::before{
+    content: "";
+    /* position: absolute; */
+    /* bottom: 50%; */
+    /* top: 100%; */
+    /* left: 14px; */
+    /* transform: translateY(10px); */
+}
+
+.tooltip:hover .tooltipText{
+    top: -100%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText2 {
+    top: -50%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText3 {
+    top: -32%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText4 {
+    top: -55%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText5 {
+    top: -72%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText6 {
+    top: -40%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.tooltip:hover .tooltipText7 {
+    top: -70%;
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+
+@media screen and (width:375px){
+    .centro {
+        width: 345px;
+    }
+    h2{
+        transform: scale(1.4);
+        padding-left: 45px;
+    }
+    .mybalance, img{
+        transform: scale(1.4)
+    }
+    header{
+        height: 95px;
+        padding: 30px;
+    }
+    main{
+        height: 350px;
+        padding: 20px;
+    }
+    .barras {
+        margin-top: 36px;
+        height: 200px;
+    }
+    
+    .barra {
+        width: 33px;
+    }
+    .tres {
+        height: 150px;
+        width: 35px;
+    }
+    .uno {
+        height: 93px;
+    }
+
+    .dos {
+        height: 120px;
+    }
+    .cuatro {
+        height: 115px;
+    }
+
+    .cinco {
+        height: 103px;
+    }
+
+    .seis {
+        height: 135px;
+    }
+
+    .siete {
+        height: 105px;
+    }
+    .weekdays {
+        font-size: 11px;
+    }
+    .abajo {  
+     padding: 5px 0px 30px;
+    }
+    .pesos {
+        font-size: 30px;
+    }
+    .letraabajo {
+        font-size: 12px;
+    }
+    .tooltip:hover .tooltipText {
+        top: -30%;
+    }
+
+    .tooltip:hover .tooltipText2 {
+        top: -25%;
+    }
+
+    .tooltip:hover .tooltipText3 {
+        top: -20%;
+    }
+
+    .tooltip:hover .tooltipText4 {
+        top: -25%;
+    }
+
+    .tooltip:hover .tooltipText5 {
+        top: -28%;
+    }
+
+    .tooltip:hover .tooltipText6 {
+        top: -22%;
+    }
+
+    .tooltip:hover .tooltipText7 {
+        top: -28%;
+    }
+    .tooltipText, .tooltipText2, .tooltipText3, .tooltipText4, .tooltipText5, .tooltipText6, .tooltipText7 {
+        left: 16px;
+    }
+}
+
+
+@media screen and (width:1444px){
+    .escala{
+        
+        transform: scale(1.8)
+    }
+
+}
